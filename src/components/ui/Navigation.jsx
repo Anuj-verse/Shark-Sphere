@@ -19,7 +19,7 @@ const Navigation = () => {
                     {navLinks.map(link => (
                         <a href="#" key={link} className="hover:text-cyan-400 transition-colors duration-300 group relative">
                             {link}
-                            {link === "Page" && <span className="text-xs ml-1">▼</span>}
+                            
                             <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-cyan-400 transition-all duration-300 group-hover:w-full"></span>
                         </a>
                     ))}

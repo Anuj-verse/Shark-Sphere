@@ -9,7 +9,7 @@ const ExploreCard = () => {
     return (
         <div className="glass-ocean bg-opacity-10 backdrop-blur-lg rounded-3xl p-6 shadow-2xl border border-white/20">
             <div className="mb-4">
-                <span className="text-white font-semibold">Explore Ocean</span>
+                <span className="text-white font-bold text-lg">Explore Ocean</span>
                 <div className="flex items-center -space-x-3">
                   
                 </div>
@@ -33,7 +33,7 @@ const ExploreCard = () => {
 // The main hero section containing the title and the explore card
 const Hero = () => {
     return (
-        <div className="relative pt-50 mr-10 text-white">
+        <div className="relative pt-30 mr-10 text-white">
             <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                 {/* Left Side Content */}
                 <div className="text-center md:text-left">
@@ -44,10 +44,10 @@ const Hero = () => {
                     <h1 className="text-6xl md:text-8xl font-bold leading-tight mb-4 text-shadow-lg">
                         Let's Dive
                     </h1>
-                    <p className="text-lg text-gray-300 max-w-lg mx-auto md:mx-0 mb-8">
+                    <p className="text-lg text-gray-200 max-w-lg mx-auto md:mx-0 mb-8">
                        Discover where sharks thrive using cutting-edge satellite data and machine learning for ocean conservation
                     </p>
-                    <a href="https://www.youtube.com/watch?v=ukiGFmZ32YA&list=PL6QREj8te1P4-o8tvI3RF5NOEe0Amzd30" className="bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-4 px-8 rounded-lg text-lg transition-transform duration-300 inline-block hover:scale-105">
+                    <a href="#" className="bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-4 px-8 rounded-lg text-lg transition-transform duration-300 inline-block hover:scale-105">
                         Get Started Now!
                     </a>
                 </div>

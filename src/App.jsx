@@ -6,7 +6,7 @@ import BackgroundVideo from "./components/ui/BackgroundVideo";
 
 export default function App() {
     return (
-        <div className="min-h-screen bg-gray-900 font-sans relative overflow-hidden">
+        <div className="min-h-screen bg-gray-900 font-sans relative overflow-hidden ">
             {/* Background Image/Video */}
             <div className="absolute inset-0 z-0">
                 
