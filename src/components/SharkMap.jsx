@@ -56,7 +56,7 @@ const SharkMap = ({ sharks, loading, onGetStarted }) => {
               </>
             ) : (
               <>
-                🦈 Get Started
+                🦈 Show Map
               </>
             )}
           </button>
@@ -99,7 +99,7 @@ const SharkMap = ({ sharks, loading, onGetStarted }) => {
                     <p><span className="font-semibold">Depth:</span> {shark.depth}</p>
                   )}
                   {shark.temperature && (
-                    <p><span className="font-semibold">Water Temp:</span> {shark.temperature}</p>
+                    <p><span className="font-semibold">SST:</span> {shark.temperature}</p>
                   )}
                 </div>
               </div>

@@ -2,7 +2,7 @@
 const mockSharkData = [
   {
     id: 1,
-    name: "Mary Lee",
+    name: "WS1",
     species: "Great White Shark",
     latitude: 35.2271,
     longitude: -75.5449,
@@ -17,7 +17,7 @@ const mockSharkData = [
   },
   {
     id: 2,
-    name: "Nukumi",
+    name: "WS2",
     species: "Great White Shark",
     latitude: 44.6488,
     longitude: -63.5752,
@@ -32,7 +32,7 @@ const mockSharkData = [
   },
   {
     id: 3,
-    name: "Unama'ki",
+    name: "WS3",
     species: "Great White Shark",
     latitude: 41.2033,
     longitude: -70.0420,
@@ -47,7 +47,7 @@ const mockSharkData = [
   },
   {
     id: 4,
-    name: "Cabot",
+    name: "WS4",
     species: "Great White Shark",
     latitude: 33.6891,
     longitude: -78.8867,
@@ -62,7 +62,7 @@ const mockSharkData = [
   },
   {
     id: 5,
-    name: "Ironbound",
+    name: "WS5",
     species: "Great White Shark",
     latitude: 39.3643,
     longitude: -74.4229,
@@ -77,7 +77,7 @@ const mockSharkData = [
   },
   {
     id: 6,
-    name: "Scot",
+    name: "WS6",
     species: "Great White Shark",
     latitude: 25.7617,
     longitude: -80.1918,
@@ -92,7 +92,7 @@ const mockSharkData = [
   },
   {
     id: 7,
-    name: "Andromache",
+    name: "WS7",
     species: "Great White Shark",
     latitude: 31.5804,
     longitude: -81.2001,
@@ -107,7 +107,7 @@ const mockSharkData = [
   },
   {
     id: 8,
-    name: "Breton",
+    name: "WS8",
     species: "Great White Shark",
     latitude: 29.9511,
     longitude: -90.0715,
@@ -122,7 +122,7 @@ const mockSharkData = [
   },
   {
     id: 9,
-    name: "Vimy",
+    name: "WS9",
     species: "Great White Shark",
     latitude: 36.8508,
     longitude: -75.9776,
@@ -137,7 +137,7 @@ const mockSharkData = [
   },
   {
     id: 10,
-    name: "Jekyll",
+    name: "WS10",
     species: "Great White Shark",
     latitude: 31.0389,
     longitude: -81.4912,
