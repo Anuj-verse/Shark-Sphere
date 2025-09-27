@@ -9,7 +9,7 @@ const LogoIcon = () => (
 const Navigation = () => {
     const navLinks = ["Home", "About Us", "Page"];
     return (
-        <header className="absolute top-5 left-0 right-0 z-50 text-white">
+        <header className="absolute top-5 left-0 right-0 z-11 text-white">
             <div className="container mx-auto flex justify-between items-center p-4">
                 <div className="flex items-center space-x-2">
                     <LogoIcon />

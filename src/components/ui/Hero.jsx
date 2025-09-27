@@ -1,3 +1,6 @@
+import React, { useState } from 'react';
+import SharkTrackingDashboard from '../SharkTrackingDashboard';
+
 
 const DiamondIcon = () => (
     <svg className="w-4 h-4 mr-2 text-cyan-400" fill="currentColor" viewBox="0 0 20 20">
@@ -16,7 +19,7 @@ const ExploreCard = () => {
             </div>
             
             <div className="relative rounded-2xl overflow-hidden">
-            <img src="/shark.jpg" alt="hello" srcset="" />
+            <img src="/shark.jpg" alt="hello" />
             </div>
             <div className="relative rounded-2xl overflow-hidden">
                 {/* You can replace this div with a video or image component */}
@@ -32,6 +35,18 @@ const ExploreCard = () => {
 
 // The main hero section containing the title and the explore card
 const Hero = () => {
+    const [showDashboard, setShowDashboard] = useState(false);
+    const [loading, setLoading] = useState(false);
+
+    const handleGetStarted = async () => {
+        setLoading(true);
+        setShowDashboard(true);
+        // The dashboard will handle loading the shark data automatically
+    };
+
+    if (showDashboard) {
+        return <SharkTrackingDashboard onBack={() => setShowDashboard(false)} autoLoad={true} />;
+    }
     return (
         <div className="relative pt-30 mr-10 text-white">
             <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -47,9 +62,9 @@ const Hero = () => {
                     <p className="text-lg text-gray-200 max-w-lg mx-auto md:mx-0 mb-8">
                        Discover where sharks thrive using cutting-edge satellite data and machine learning for ocean conservation
                     </p>
-                    <a href="#" className="bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-4 px-8 rounded-lg text-lg transition-transform duration-300 inline-block hover:scale-105">
+                    <button  onClick={() => setShowDashboard(true)} className="bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-4 px-8 rounded-lg text-lg transition-transform duration-300 inline-block hover:scale-105 cursor-pointer">
                         Get Started Now!
-                    </a>
+                    </button>
                 </div>
                 
                 {/* Right Side Card */}

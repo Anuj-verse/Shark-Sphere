@@ -1,5 +1,6 @@
 import { Hero } from './Hero';
 
+
 export default function BackgroundVideo() {
   return (
     <div className=" h-screen w-screen overflow-hidden">
