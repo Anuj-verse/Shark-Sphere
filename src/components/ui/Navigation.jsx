@@ -6,27 +6,38 @@ const LogoIcon = () => (
     </svg>
 );
 
-const Navigation = () => {
-    const navLinks = ["Home", "About Us", "Page"];
+const Navigation = ({ onHome, onContact }) => {
+    const navLinks = [
+        { text: "Home", onClick: onHome },
+        { text: "About Us", onClick: () => {} },
+        { text: "Page", onClick: () => {} }
+    ];
+    
     return (
         <header className="absolute top-5 left-0 right-0 z-11 text-white">
             <div className="container mx-auto flex justify-between items-center p-4">
-                <div className="flex items-center space-x-2">
+                <div className="flex items-center space-x-2 cursor-pointer" onClick={onHome}>
                     <LogoIcon />
                     <span className="text-2xl font-bold">Shark-Sphere</span>
                 </div>
                 <nav className="hidden md:flex items-center space-x-8 text-lg">
-                    {navLinks.map(link => (
-                        <a href="#" key={link} className="hover:text-cyan-400 transition-colors duration-300 group relative">
-                            {link}
-                            
+                    {navLinks.map((link, index) => (
+                        <button 
+                            key={index} 
+                            onClick={link.onClick}
+                            className="hover:text-cyan-400 transition-colors duration-300 group relative bg-transparent border-none cursor-pointer text-lg"
+                        >
+                            {link.text}
                             <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-cyan-400 transition-all duration-300 group-hover:w-full"></span>
-                        </a>
+                        </button>
                     ))}
                 </nav>
-                <a href="#" className="hidden md:inline-block bg-cyan-500 hover:bg-cyan-600 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-300">
+                <button 
+                    onClick={onContact}
+                    className="hidden md:inline-block bg-cyan-500 hover:bg-cyan-600 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-300 cursor-pointer"
+                >
                     Contact Us
-                </a>
+                </button>
                 <button className="md:hidden text-white">
                     <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
                 </button>

@@ -1,0 +1,64 @@
+/* Custom cluster marker styles */
+.marker-cluster-small {
+  background-color: rgba(181, 226, 140, 0.6);
+}
+.marker-cluster-small div {
+  background-color: rgba(110, 204, 57, 0.6);
+}
+
+.marker-cluster-medium {
+  background-color: rgba(241, 211, 87, 0.6);
+}
+.marker-cluster-medium div {
+  background-color: rgba(240, 194, 12, 0.6);
+}
+
+.marker-cluster-large {
+  background-color: rgba(253, 156, 115, 0.6);
+}
+.marker-cluster-large div {
+  background-color: rgba(241, 128, 23, 0.6);
+}
+
+/* Override default cluster styles to make them more visible */
+.marker-cluster {
+  background-clip: padding-box;
+  border-radius: 20px;
+}
+
+.marker-cluster div {
+  width: 30px;
+  height: 30px;
+  margin-left: 5px;
+  margin-top: 5px;
+  text-align: center;
+  border-radius: 15px;
+  font: 12px "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+.marker-cluster span {
+  line-height: 30px;
+  color: #000;
+  font-weight: bold;
+}
+
+/* Temperature circle markers enhanced visibility */
+.leaflet-interactive {
+  cursor: pointer;
+  stroke-width: 3 !important;
+}
+
+.leaflet-interactive:hover {
+  stroke-width: 5 !important;
+  opacity: 1 !important;
+}
+
+/* Popup styling enhancements */
+.shark-popup .leaflet-popup-content-wrapper {
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.shark-popup .leaflet-popup-tip {
+  background: white;
+}

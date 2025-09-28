@@ -88,7 +88,7 @@ const mockSharkData = [
     lastPing: "Dec 15, 2024",
     location: "Florida Keys",
     depth: "203 ft",
-    temperature: "78°F"
+    temperature: "84°F"
   },
   {
     id: 7,
@@ -118,7 +118,7 @@ const mockSharkData = [
     lastPing: "Dec 12, 2024",
     location: "Gulf of Mexico",
     depth: "234 ft",
-    temperature: "75°F"
+    temperature: "81°F"
   },
   {
     id: 9,
@@ -148,7 +148,37 @@ const mockSharkData = [
     lastPing: "Dec 16, 2024",
     location: "Jekyll Island, GA",
     depth: "76 ft",
-    temperature: "69°F"
+    temperature: "76°F"
+  },
+  {
+    id: 11,
+    name: "WS11",
+    species: "Great White Shark",
+    latitude: 24.5557,
+    longitude: -81.7804,
+    length: "14.2 ft",
+    weight: "1,856 lbs",
+    gender: "Female",
+    tagDate: "Aug 15, 2023",
+    lastPing: "Dec 16, 2024",
+    location: "Key West, FL",
+    depth: "145 ft",
+    temperature: "86°F"
+  },
+  {
+    id: 12,
+    name: "WS12",
+    species: "Great White Shark",
+    latitude: 27.7663,
+    longitude: -82.6404,
+    length: "11.8 ft",
+    weight: "1,234 lbs",
+    gender: "Male",
+    tagDate: "Jun 12, 2023",
+    lastPing: "Dec 15, 2024",
+    location: "Tampa Bay, FL",
+    depth: "98 ft",
+    temperature: "79°F"
   }
 ];
 
