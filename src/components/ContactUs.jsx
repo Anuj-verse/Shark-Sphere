@@ -96,7 +96,7 @@ const ContactUs = () => {
           </div>
 
           <div className="flex items-center justify-between">
-            <p className="text-xs text-gray-400">We typically respond within 1–2 business days.</p>
+            <p className="text-xs text-gray-400">We typically respond within 1-2 business days.</p>
             <button
               type="submit"
               className="bg-cyan-500 hover:bg-cyan-600 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-300"

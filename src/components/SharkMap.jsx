@@ -33,13 +33,7 @@ const getTemperatureColor = (tempStr) => {
 const getTemperatureCategory = (tempStr) => {
   const temp = parseInt(tempStr.replace('°F', ''));
   
-  if (temp < 77) {
-    return 'Cool';
-  } else if (temp >= 77 && temp < 83) {
-    return 'Warm';
-  } else {
-    return 'Hot';
-  }
+ 
 };
 
 // Custom shark icon (keeping the original for shark markers if needed)
@@ -182,7 +176,7 @@ const SharkMap = ({ sharks, loading, onGetStarted }) => {
                     )}
                     {shark.temperature && (
                       <p className="flex items-center gap-2">
-                        <span className="font-semibold">Water Temp:</span> 
+                        <span className="font-semibold">SST:</span> 
                         <span className="font-medium">{shark.temperature}</span>
                         <span className="text-xs px-2 py-1 rounded-full" 
                               style={{ 
